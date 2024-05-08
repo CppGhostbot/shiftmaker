@@ -1,0 +1,3 @@
+﻿  ソース.cpp
+C:\Users\j2013ccl\source\repos\shift_maker\shift_maker\ソース.cpp(62,29): warning C4018: '>=': signed と unsigned の数値を比較しようとしました。
+  shift_maker.vcxproj -> C:\Users\j2013ccl\source\repos\shift_maker\Debug\shift_maker.exe
