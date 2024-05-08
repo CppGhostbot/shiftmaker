@@ -6,7 +6,7 @@
 #include <fstream>
 #include <sstream>
 
-#define shift_time 7//7ŠÔ‚Å‹xŒe‚©‘Ş‹Î
+#define shift_time 7//7æ™‚é–“ã§ä¼‘æ†©ã‹é€€å‹¤
 int main(void) {
 	//input data
 	std::vector<std::string> name;
@@ -20,7 +20,7 @@ int main(void) {
 	std::string str_minus_buf;
 	std::string str_plus_buf;
 	int kibou_start, kibou_end;
-	std::string input_path = "C:\\Users\\j2013ccl\\OneDrive - Saitama Institute of Technology\\‰ß‹\\ƒfƒXƒNƒgƒbƒv\\shift_kibou.csv";
+	std::string input_path = "C:\\Users\\/*ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ‘ã‚¹ã‚’æŒ‡å®š*/shift_kibou.csv";
 	std::ifstream ifs(input_path);
 	getline(ifs, str_line_buf);//skip head
 	getline(ifs, str_line_buf);
@@ -35,7 +35,7 @@ int main(void) {
 		getline(i_stream, str_conma_buf, ',');
 		name.push_back(str_conma_buf);
 		while (getline(i_stream, str_conma_buf, ',')) {
-			// kibou‘‚«‚Ş
+			// kibouæ›¸ãè¾¼ã‚€
 			std::istringstream i_stream(str_conma_buf);
 			if (str_conma_buf.size() != 0) {
 				if (str_conma_buf.find("+") == -1) {
@@ -88,7 +88,7 @@ int main(void) {
 				if (kibou[i][start][j] == 1) {
 					shift_kettei[i][start][j] = 1;
 					shift_assigned[i][j]++;
-					for (int k = 1; k <= shift_time; k++) {//‚È‚é‚×‚­˜A‘±‚É‚È‚é‚æ‚¤’²®
+					for (int k = 1; k <= shift_time; k++) {//ãªã‚‹ã¹ãé€£ç¶šã«ãªã‚‹ã‚ˆã†èª¿æ•´
 						if (j + k >= 24) {
 							break;
 						}
